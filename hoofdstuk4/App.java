@@ -2,7 +2,7 @@ abstract class Figuur {
 	abstract double omtrek();
 }
 
-class Rechthoek extends Figuur {
+class Rectangle extends Figuur {
 	double breedte, hoogte;
 
 	double omtrek() {
@@ -16,7 +16,7 @@ class Rechthoek extends Figuur {
 
 class Square extends Figuur {
 // of
-// class Square extends Rechthoek {
+// class Square extends Rectangle {
 // en lege body
 	double breedte, hoogte;
 
@@ -38,7 +38,7 @@ class App {
 	public static void main(String args[]) {
 		System.out.println("hello");
 
-		Rechthoek rechthoek = new Rechthoek();
+		Rectangle rechthoek = new Rectangle();
 		rechthoek.breedte = 5;
 		rechthoek.hoogte = 6;
 
